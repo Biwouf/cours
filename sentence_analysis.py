@@ -18,12 +18,12 @@ sentence = """Le sénateur, dont il a été parlé plus haut, était un homme en
 voyelles = "aeiouyAEIOUYéèâàuùû"
 
 #Le compteur de voyelles
-count = 0
+count_a = 0
 
 #On parcourt la phrase
 for letter in sentence:
 	if letter == 'a' or letter == 'à':
-		count += 1
+		count_a += 1
 
-print("Le texte contient " + str(count) + " fois la lettre a")
+print("Le texte contient " + str(count_a) + " fois la lettre a")
 
