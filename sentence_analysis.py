@@ -22,8 +22,8 @@ count = 0
 
 #On parcourt la phrase
 for letter in sentence:
-	if letter in voyelles:
+	if letter == 'a' or letter == 'à':
 		count += 1
 
-print("La phrase contient " + str(count) + " voyelles(s)")
+print("Le texte contient " + str(count) + " fois la lettre a")
 
