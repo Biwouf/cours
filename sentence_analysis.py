@@ -1,5 +1,5 @@
 #! /usr/bin/env python3.6
-# coding: utf-8
+#coding: utf-8
 
 sentence = """Le sénateur, dont il a été parlé plus haut, était un homme entendu qui 
     avait fait son chemin avec une rectitude inattentive à toutes ces rencontres qui font 
@@ -15,15 +15,18 @@ sentence = """Le sénateur, dont il a été parlé plus haut, était un homme en
     """
 
 #Toutes les voyelles possibles
-voyelles = "aeiouyAEIOUYéèâàuùû"
+#voyelles = "aeiouyAEIOUYéèâàuùû"
 
-#Le compteur de voyelles
+#Le compteur de a
 count_a = 0
 
-#On parcourt la phrase
+#On parcourt la phrase caractère par caractère
 for letter in sentence:
+	#Si le caractère est un "a" ou un "à", on incrémente le compteur
 	if letter == 'a' or letter == 'à':
 		count_a += 1
 
+#Phrase qui donne le nombre de lettres.
+#On doit convertir le compteur en chaîne de caractères.
 print("Le texte contient " + str(count_a) + " fois la lettre a")
 
