@@ -14,11 +14,10 @@ sentence = """Le sénateur, dont il a été parlé plus haut, était un homme en
     (Les Misérables, Victor Hugo)
     """
 
-#Toutes les voyelles possibles
-#voyelles = "aeiouyAEIOUYéèâàuùû"
+############# COMPTER LES A ############
 
 #Le compteur de a
-count_a = 0
+#count_a = 0
 
 #On parcourt la phrase caractère par caractère
 #for letter in sentence:
@@ -28,5 +27,23 @@ count_a = 0
 
 #Phrase qui donne le nombre de lettres.
 #On doit convertir le compteur en chaîne de caractères.
-print("Le texte contient " + str(count_a) + " fois la lettre a")
+#print("Le texte contient " + str(count_a) + " fois la lettre a")
+
+
+############# COMPTER LES VOYELLES ############
+
+#Toutes les voyelles possibles
+voyelles = "aeiouyAEIOUYéèâàuùû"
+
+#Compteur de voyalles initialisé à 0
+count_v = 0
+
+#On parcout la phase caractère par caractère
+for letter in sentence:
+    #On vérifie si la lettre est dans l'ensemble de voyelles
+    if letter in voyelles:
+        #Si oui on ajoute 1 au compteur
+        count_v += 1
+
+print("Il y a {} voyelles dans cette phrase".format(count_v))
 
